@@ -262,7 +262,7 @@ local api = require "luci.model.cbi.bypass.api"
 			if (opt.get("tls").checked) {
 				var v_security = "tls";
 				params += "&security=" + v_security;
-				params += opt.query("sni", "tls_serverName");
+				params += opt.query("sni", "tls_host");
 			}
 			}
 			if (opt.get("xtls")) {
